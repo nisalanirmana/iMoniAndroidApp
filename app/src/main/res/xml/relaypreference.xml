@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <SwitchPreference
+        android:summary="@string/relay_prefs_relay_1_summary"
+        android:title="@string/relay_prefs_relay_1"
+        android:key="@string/relay_prefs_relay_1_key" />
+    <SwitchPreference
+        android:summary="@string/relay_prefs_relay_2_summary"
+        android:title="@string/relay_prefs_relay_2"
+        android:key="@string/relay_prefs_relay_2_key" />
+
+</PreferenceScreen>

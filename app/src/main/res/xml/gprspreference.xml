@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:summary="@string/gprs_prefs_server_ip_summary"
+        android:title="@string/gprs_prefs_server_ip"
+        android:key="@string/gprs_prefs_server_ip_key" />
+    <EditTextPreference
+        android:summary="@string/gprs_prefs_apn_summary"
+        android:title="@string/gprs_prefs_apn"
+        android:key="@string/gprs_prefs_apn_key" />
+    <EditTextPreference
+        android:summary="@string/gprs_prefs_port_summary"
+        android:title="@string/gprs_prefs_port"
+        android:key="@string/gprs_prefs_port_key" />
+    
+    <EditTextPreference
+        android:summary="@string/gprs_prefs_interval_summary"
+        android:title="@string/gprs_prefs_interval"
+        android:key="@string/gprs_prefs_interval_key" />
+
+</PreferenceScreen>

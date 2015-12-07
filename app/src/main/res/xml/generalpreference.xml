@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:summary="@string/general_prefs_racu_name_summary"
+        android:title="@string/general_prefs_racu_name"
+        android:key="@string/general_prefs_racu_name_key"
+        android:enabled="false" />
+    <ListPreference
+        android:summary="@string/general_prefs_groups_summary"
+        android:title="@string/general_prefs_groups"
+        android:entries="@array/racu_groups"
+        android:entryValues="@array/racu_group_values"
+        android:key="@string/general_prefs_groups_key" />
+    <EditTextPreference
+        android:summary="@string/general_prefs_racu_ip_summary"
+        android:title="@string/general_prefs_racu_ip"
+        android:key="@string/general_prefs_racu_ip_key"
+        android:enabled="false" />
+    <EditTextPreference
+        android:summary="@string/general_prefs_sim_no_summary"
+        android:title="@string/general_prefs_sim_no"
+        android:key="@string/general_prefs_sim_no_key" />
+
+</PreferenceScreen>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:summary=""
+        android:title="Alarm Name" />
+    <EditTextPreference
+        android:summary=""
+        android:title="Upper Threshold" />
+    <EditTextPreference
+        android:summary=""
+        android:title="Lower Threshold" />
+    <EditTextPreference
+        android:summary=""
+        android:title="UT Text" />
+    <EditTextPreference
+        android:summary=""
+        android:title="LT Text" />
+    <EditTextPreference
+        android:summary=""
+        android:title="Priority" />
+
+</PreferenceScreen>

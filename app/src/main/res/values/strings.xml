@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">iMoni</string>
+    <string name="action_settings">Settings</string>
+    <string name="login_title">iMoni</string>
+    <string name="login_username">User name</string>
+    <string name="login_username_hint">Company/User</string>
+    <string name="login_password">Password</string>
+    <string name="login_remember">Remember me</string>
+    <string name="login_button">Log in</string>
+    <string name="login_no_account">"Don't have an account? Creat one here."</string>
+    <string name="prefs_general">General RACU settings</string>
+    <string name="prefs_gprs">GPRS</string>
+    <string name="prefs_relay">Relays</string>
+    <string name="prefs_analog">Analog inputs</string>
+    <string name="prefs_digital">Digital inputs</string>
+    <string name="prefs_general_key">prefs_general</string>
+    <string name="prefs_gprs_key">prefs_gprs</string>
+    <string name="prefs_relay_key">prefs_relay</string>
+    <string name="prefs_analog_key">prefs_analog</string>
+    <string name="prefs_digital_key">prefs_digital</string>
+    <string name="prefs_general_summary">General summary</string>
+    <string name="prefs_gprs_summary">GPRS summary</string>
+    <string name="prefs_relay_summary">Relay summary</string>
+    <string name="prefs_analog_summary">Analog summary</string>
+    <string name="prefs_digital_summary">Digital summary</string>
+
+    <string name="general_prefs_racu_name">RACU name</string>
+    <string name="general_prefs_groups">RACU group</string>
+    <string name="general_prefs_racu_ip">RACU IP</string>
+    <string name="general_prefs_sim_no">SIM number</string>
+    
+    <string name="general_prefs_racu_name_summary">Name RACU</string>
+    <string name="general_prefs_groups_summary">Select RACU group</string>
+    <string name="general_prefs_racu_ip_summary">Provide a valid ip to RACU</string>
+    <string name="general_prefs_sim_no_summary">Insert a valid SIM number</string>
+    
+    <string name="general_prefs_racu_name_key">racu_name</string>
+    <string name="general_prefs_groups_key">racu_group</string>
+    <string name="general_prefs_racu_ip_key">racu_ip</string>
+    <string name="general_prefs_sim_no_key">sim_number</string>
+    
+    <string name="gprs_prefs_server_ip">Server IP</string>
+    <string name="gprs_prefs_apn">APN</string>
+    <string name="gprs_prefs_port">Port</string>
+    <string name="gprs_prefs_interval">Transmission Interval</string>
+    
+    <string name="gprs_prefs_server_ip_summary">Provide a valid IP for server</string>
+    <string name="gprs_prefs_apn_summary">Enter Access Point Name</string>
+    <string name="gprs_prefs_port_summary">Enter port</string>
+    <string name="gprs_prefs_interval_summary">Enter transmission interval</string>
+    
+    <string name="gprs_prefs_server_ip_key">server_ip</string>
+    <string name="gprs_prefs_apn_key">apn</string>
+    <string name="gprs_prefs_port_key">port</string>
+    <string name="gprs_prefs_interval_key">transmission_interval</string>
+    
+    <string name="relay_prefs_relay_1">Relay 1</string>
+    <string name="relay_prefs_relay_2">Relay 2</string>
+    
+    <string name="relay_prefs_relay_1_summary">Set relay 1status</string>
+    <string name="relay_prefs_relay_2_summary">Set relay 2 status</string>
+    
+    <string name="relay_prefs_relay_1_key">relay_1</string>
+    <string name="relay_prefs_relay_2_key">relay_2</string>
+
+</resources>

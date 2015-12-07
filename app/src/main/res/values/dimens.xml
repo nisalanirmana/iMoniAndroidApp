@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="activity_horizontal_margin">16.0dip</dimen>
+    <dimen name="activity_vertical_margin">16.0dip</dimen>
+    <dimen name="preference_fragment_padding_top">5.0dip</dimen>
+    <dimen name="preference_fragment_padding_bottom">5.0dip</dimen>
+    <dimen name="preference_fragment_padding_side">16.0dip</dimen>
+
+</resources>

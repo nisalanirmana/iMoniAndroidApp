@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="racu_groups">
+    </string-array>
+    <integer-array name="racu_group_values">
+    </integer-array>
+
+</resources>

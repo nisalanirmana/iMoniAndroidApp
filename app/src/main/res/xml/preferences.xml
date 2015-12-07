@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Preference
+        android:key="@string/prefs_general_key"
+        android:icon="@drawable/ic_general_settings"
+        android:title="@string/prefs_general" />
+    <Preference
+        android:key="@string/prefs_gprs_key"
+        android:icon="@drawable/ic_gprs"
+        android:title="@string/prefs_gprs" />
+    <Preference
+        android:key="@string/prefs_relay_key"
+        android:icon="@drawable/ic_relays"
+        android:title="@string/prefs_relay" />
+    <Preference
+        android:key="@string/prefs_analog_key"
+        android:icon="@drawable/ic_analog_input"
+        android:title="@string/prefs_analog" />
+    <Preference
+        android:key="@string/prefs_digital_key"
+        android:icon="@drawable/ic_digital_input"
+        android:title="@string/prefs_digital" />
+
+</PreferenceScreen>

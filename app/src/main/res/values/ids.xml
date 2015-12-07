@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="login_title" type="id">false</item>
+    <item name="login_sub_relativeLayout" type="id">false</item>
+    <item name="login_username" type="id">false</item>
+    <item name="login_username_input" type="id">false</item>
+    <item name="login_password_input" type="id">false</item>
+    <item name="login_password" type="id">false</item>
+    <item name="login_remember" type="id">false</item>
+    <item name="login_button" type="id">false</item>
+    <item name="login_no_account" type="id">false</item>
+    <item name="drawer_layout" type="id">false</item>
+    <item name="pager" type="id">false</item>
+    <item name="drawer_list" type="id">false</item>
+    <item name="drawer_child_item_text" type="id">false</item>
+    <item name="drawer_group_item_text" type="id">false</item>
+    <item name="NestedFrag_section_label" type="id">false</item>
+    <item name="events_gridview" type="id">false</item>
+    <item name="mainFrag_Fragframe" type="id">false</item>
+    <item name="event_grid_item_RACU_name" type="id">false</item>
+    <item name="event_grid_item_alarm_name" type="id">false</item>
+    <item name="button_bar" type="id">false</item>
+    <item name="back_button" type="id">false</item>
+    <item name="skip_button" type="id">false</item>
+    <item name="next_button" type="id">false</item>
+    <item name="action_settings" type="id">false</item>
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <EditTextPreference
+        android:summary=""
+        android:title="Alarm Name" />
+    <EditTextPreference
+        android:summary=""
+        android:title="Health text" />
+    <EditTextPreference
+        android:summary=""
+        android:title="Alarm text" />
+    <EditTextPreference
+        android:summary=""
+        android:title="Priority" />
+    <EditTextPreference
+        android:summary=""
+        android:title="Normally open" />
+
+</PreferenceScreen>
