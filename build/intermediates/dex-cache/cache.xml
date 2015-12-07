@@ -9,6 +9,34 @@
         <dex dex="C:\Users\Nisala\AndroidStudioProjects\iMoni1\app\build\intermediates\pre-dexed\debug\guava-17.0-8063314df20cffe336b58a73e725ab6a01ae5ae8.jar" />
     </item>
     <item
+        jar="E:\iMoni\Test\iMoni1\app\libs\android-async-http-1.4.5.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="77bf7cacf9cefe19dc105e5425d2eb1bb5285881">
+        <dex dex="E:\iMoni\Test\iMoni1\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.5-3635e67e2ddcaa0390f84681567f967c76ec917c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Nisala\AndroidStudioProjects\iMoni1\app\libs\android-async-http-1.4.5.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="77bf7cacf9cefe19dc105e5425d2eb1bb5285881">
+        <dex dex="C:\Users\Nisala\AndroidStudioProjects\iMoni1\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.5-796db2de48c645acd3b54cc95e7e7aa0308b1992.jar" />
+    </item>
+    <item
+        jar="E:\iMoni\Test\iMoni1\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="E:\iMoni\Test\iMoni1\app\build\intermediates\pre-dexed\debug\classes-0429ecaa184672ca20accb3339ab35bdb2db15db.jar" />
+    </item>
+    <item
+        jar="E:\iMoni\Test\iMoni1\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="E:\iMoni\Test\iMoni1\app\build\intermediates\pre-dexed\debug\internal_impl-20.0.0-5c7fcf5f9b429da8c3f8f6d28a2386367638ef0f.jar" />
+    </item>
+    <item
         jar="C:\Users\Nisala\AndroidStudioProjects\iMoni1\app\build\intermediates\exploded-aar\com.android.support\support-v4\20.0.0\libs\internal_impl-20.0.0.jar"
         jumboMode="false"
         revision="22.0.1"
@@ -21,13 +49,6 @@
         revision="22.0.1"
         sha1="8694693636ab36910c8100ce527c258ff3ebece0">
         <dex dex="C:\Users\Nisala\AndroidStudioProjects\iMoni1\app\build\intermediates\pre-dexed\debug\classes-73487ab0055acc42644686533eeedf92120a5290.jar" />
-    </item>
-    <item
-        jar="C:\Users\Nisala\AndroidStudioProjects\iMoni1\app\libs\android-async-http-1.4.5.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="77bf7cacf9cefe19dc105e5425d2eb1bb5285881">
-        <dex dex="C:\Users\Nisala\AndroidStudioProjects\iMoni1\app\build\intermediates\pre-dexed\debug\android-async-http-1.4.5-796db2de48c645acd3b54cc95e7e7aa0308b1992.jar" />
     </item>
     <item
         jar="C:\Users\Nisala\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\20.0.0\support-annotations-20.0.0.jar"
