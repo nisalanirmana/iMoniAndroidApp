@@ -40,6 +40,7 @@ public class EventsGridViewAdapter extends ArrayAdapter<Bundle> {
     			+ "Alarm: " + event.getString(Variables.ALARM) + "\n" 
     			+ "Priority: " + event.getString(Variables.PRIORITY) + "\n"
                 + "Event time: " + event.getString(Variables.EVENT_TIME) + "\n"
+                    + "Type: " + event.getString(Variables.MAP_TYPE) + "\n"
     			+ "Acknowledged time: " + event.getString(Variables.ACK_TIME) + "\n")
 
     		.setPositiveButton("OK", new OnClickListener() {
@@ -55,6 +56,7 @@ public class EventsGridViewAdapter extends ArrayAdapter<Bundle> {
 		View gridItem = ((LayoutInflater)_Context.getSystemService(Context.LAYOUT_INFLATER_SERVICE)).inflate(R.layout.grid_item, null);
 		TextView racu = (TextView)gridItem.findViewById(R.id.event_grid_item_RACU_name);
 		TextView alarm = (TextView)gridItem.findViewById(R.id.event_grid_item_alarm_name);
+        TextView typename = (TextView)gridItem.findViewById(R.id.event_grid_item_type_name);
 		String priority = ((Bundle)_Events.get(position)).getString(Variables.PRIORITY);
 		if (priority.equalsIgnoreCase("CRITICAL")) {
 			gridItem.setBackgroundColor(Variables.CRITICAL);
@@ -74,6 +76,7 @@ public class EventsGridViewAdapter extends ArrayAdapter<Bundle> {
 		}
 		racu.setText(((Bundle)_Events.get(position)).getString(Variables.RACU_NAME));
 		alarm.setText(((Bundle)_Events.get(position)).getString(Variables.ALARM));
+        typename.setText(((Bundle)_Events.get(position)).getString(Variables.MAP_TYPE));
 		gridItem.setTag(_Events.get(position));
 		return gridItem;
     }

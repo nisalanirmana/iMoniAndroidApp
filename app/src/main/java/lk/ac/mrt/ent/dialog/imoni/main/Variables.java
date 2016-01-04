@@ -10,6 +10,7 @@ import android.graphics.Color;
 public class Variables {
 	public static final String ACK_TIME = "lk.ac.mrt.ent.dialog.imoni.ack_time";
 	public static final String ALARM = "lk.ac.mrt.ent.dialog.imoni.alarm";
+    public static final String MAP_TYPE = "lk.ac.mrt.ent.dialog.imoni.maptype";
 	public static final int CRITICAL = -65536;
 	public static final int MAJOR = Color.argb(255, 255, 127, 0);
 	public static final int MINOR = -256;
@@ -39,9 +40,9 @@ public class Variables {
 	public static final String CONFIG_RACU_GROUP = "racu_group";
 	public static final String CONFIG_RACU_IP = "racu_ip";
 	public static final String CONFIG_SIM_NO = "sim_number";
-	public static final String CONFIG_SERVER_IP = "server_ip";
-	public static final String CONFIG_APN = "apn";
-	public static final String CONFIG_PORT = "port";
+	//public static final String CONFIG_SERVER_IP = "server_ip";
+	//public static final String CONFIG_APN = "apn";
+	//public static final String CONFIG_PORT = "port";
 	public static final String CONFIG_INTERVAL = "transmission_interval";
 	public static final String CONFIG_RELAY_1 = "relay_1";
 	public static final String CONFIG_RELAY_2 = "relay_2";
@@ -58,7 +59,9 @@ public class Variables {
 	public static final String CONFIG_INPUT_HEALTHY_TEXT = "healthy_text";
 	public static final String CONFIG_INPUT_ALARM_ENABLE = "alarm_enable";
 	public static final String CONFIG_INPUT_PRIORITY = "priority";
-	public static final String CONFIG_INPUT_NO = "normally_open";	
+	public static final String CONFIG_INPUT_NO = "normally_open";
+    public static final String CONFIG_DATA_VALUE = "value";
+
 	
 	public static String mComPrefix = "dlog";
 	

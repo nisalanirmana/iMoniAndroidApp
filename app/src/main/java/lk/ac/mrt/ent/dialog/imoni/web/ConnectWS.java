@@ -77,6 +77,7 @@ public class ConnectWS {
 						eventDetails.putString(Variables.RACU_NAME, eventObject.getString("RACU"));
 						eventDetails.putString(Variables.RACU_GROUP, eventObject.getString("GROUP"));
 						eventDetails.putString(Variables.ALARM, eventObject.getString("ALARM"));
+                        eventDetails.putString(Variables.MAP_TYPE, eventObject.getString("Map_Type"));
                         eventDetails.putString(Variables.EVENT_TIME, eventObject.getString("EVENT_TIME"));
 						ackTime = eventObject.getString("ACK_TIME");
 						isAcked = ackTime.equalsIgnoreCase("null");
@@ -131,6 +132,7 @@ public class ConnectWS {
 						groupChildMap.put(group, racuList);
 					}
 					MainActivity.mGroupChildMap = groupChildMap;
+                    System.out.println("Chile Map"+groupChildMap);
 					MainActivity.mGroups = new ArrayList<String>(MainActivity.mGroupChildMap.keySet());
 					MainActivity.mProgressDialog.dismiss();
 					MainActivity.SetExpandableDrawerAdapter();
@@ -188,13 +190,13 @@ public class ConnectWS {
 					simNo.setSummary(context.getText(R.string.general_prefs_sim_no_summary) + ". Current sim no is " + object.getString(Variables.CONFIG_SIM_NO));
 					
 					
-					serverIp.setText(object.getString(Variables.CONFIG_SERVER_IP));
-					apn.setText(object.getString(Variables.CONFIG_APN));
-					port.setText(object.getString(Variables.CONFIG_PORT));
+					//serverIp.setText(object.getString(Variables.CONFIG_SERVER_IP));
+				//	apn.setText(object.getString(Variables.CONFIG_APN));
+//					port.setText(object.getString(Variables.CONFIG_PORT));
 					interval.setText(object.getString(Variables.CONFIG_INTERVAL));
-					serverIp.setSummary(context.getText(R.string.gprs_prefs_server_ip_summary) + ". Current server IP is " + object.getString(Variables.CONFIG_SERVER_IP));
-					apn.setSummary(context.getText(R.string.gprs_prefs_apn_summary) + ". Current APN is " + object.getString(Variables.CONFIG_APN));
-					port.setSummary(context.getText(R.string.gprs_prefs_port_summary) + ". Current port is " + object.getString(Variables.CONFIG_PORT));
+					//serverIp.setSummary(context.getText(R.string.gprs_prefs_server_ip_summary) + ". Current server IP is " + object.getString(Variables.CONFIG_SERVER_IP));
+					//apn.setSummary(context.getText(R.string.gprs_prefs_apn_summary) + ". Current APN is " + object.getString(Variables.CONFIG_APN));
+					//port.setSummary(context.getText(R.string.gprs_prefs_port_summary) + ". Current port is " + object.getString(Variables.CONFIG_PORT));
 					interval.setSummary(context.getText(R.string.gprs_prefs_interval_summary) + ". Current interval is " + object.getString(Variables.CONFIG_INTERVAL));
 					
 					relay1.setChecked(object.getBoolean(Variables.CONFIG_RELAY_1));
@@ -204,7 +206,8 @@ public class ConnectWS {
 					PreferenceScreen digitalScreen = RACUSectionFragment.mDigitalpref.getPreferenceScreen();
 					
 					JSONArray inputs = object.getJSONArray(Variables.CONFIG_INPUTS);
-					
+                     String analogdatavalue="";
+                    String digitaldatavalue="";
 					for(int i=0; i<inputs.length(); i++){
 						JSONObject input = inputs.getJSONObject(i);
 						if(input.getString(Variables.CONFIG_INPUT_TYPE).equalsIgnoreCase("Analog Input")){
@@ -214,13 +217,18 @@ public class ConnectWS {
 							String UTText = input.getString(Variables.CONFIG_INPUT_UT_TEXT);
 							String LTText = input.getString(Variables.CONFIG_INPUT_LT_TEXT);
 							String Priority = input.getString(Variables.CONFIG_INPUT_PRIORITY);
+                            if(input.has(Variables.CONFIG_DATA_VALUE)){
+                                analogdatavalue = input.getString(Variables.CONFIG_DATA_VALUE);
+                            }else {
+                                analogdatavalue = "NOT FOUND";
+                            }
 							SectionPagerAdapter.mRACUFragment.addToChangedKeyList("analog" + String.valueOf(i) + "input_id");
 							PreferenceManager.getDefaultSharedPreferences(context).edit().putString("analog" + String.valueOf(i) + "input_id", input.getString(Variables.CONFIG_INPUT_ID)).commit();
 							final AnalogInput ain = new AnalogInput(i, alarmName, upperThreshold, lowerThreshold, UTText, LTText, Priority);
 							SectionPagerAdapter.mRACUFragment.addChildPreferenceFragment(ain);
 							Preference pref = new Preference(context);
 							if(!alarmName.isEmpty()){
-								pref.setTitle(alarmName.substring(0, 1).toUpperCase() + alarmName.substring(1));
+								pref.setTitle(alarmName.substring(0, 1).toUpperCase() + alarmName.substring(1)+" : "+analogdatavalue);
 							}
 							pref.setSummary("Click for settings");
 							pref.setOnPreferenceClickListener(new OnPreferenceClickListener(){
@@ -237,13 +245,18 @@ public class ConnectWS {
 							String alarmText = input.getString(Variables.CONFIG_INPUT_ALARM_TEXT);
 							String priority = input.getString(Variables.CONFIG_INPUT_PRIORITY);
 							String normallyOpen = input.getString(Variables.CONFIG_INPUT_NO);
+                            if(input.has(Variables.CONFIG_DATA_VALUE)){
+                                digitaldatavalue = input.getString(Variables.CONFIG_DATA_VALUE);
+                            }else {
+                                digitaldatavalue = "NOT FOUND";
+                            }
 							SectionPagerAdapter.mRACUFragment.addToChangedKeyList("digital" + String.valueOf(i) + "input_id");
 							PreferenceManager.getDefaultSharedPreferences(context).edit().putString("digital" + String.valueOf(i) + "input_id", input.getString(Variables.CONFIG_INPUT_ID)).commit();
 							final DigitalInput din = new DigitalInput(i, alarmName, healthyText, alarmText, priority, normallyOpen);
 							SectionPagerAdapter.mRACUFragment.addChildPreferenceFragment(din);
 							Preference pref = new Preference(context);
-							pref.setTitle(alarmName.substring(0, 1).toUpperCase() + alarmName.substring(1));
-							pref.setSummary("Click for settings");
+							pref.setTitle(alarmName.substring(0, 1).toUpperCase() + alarmName.substring(1)+" : "+digitaldatavalue);
+							pref.setSummary("Click for settings2");
 							pref.setOnPreferenceClickListener(new OnPreferenceClickListener(){
 								@Override
 								public boolean onPreferenceClick(Preference preference) {

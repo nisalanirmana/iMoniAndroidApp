@@ -20,6 +20,7 @@
     <item name="mainFrag_Fragframe" type="id">false</item>
     <item name="event_grid_item_RACU_name" type="id">false</item>
     <item name="event_grid_item_alarm_name" type="id">false</item>
+    <item name="event_grid_item_type_name" type="id">false</item>
     <item name="button_bar" type="id">false</item>
     <item name="back_button" type="id">false</item>
     <item name="skip_button" type="id">false</item>
